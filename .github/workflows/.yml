@@ -1,0 +1,12 @@
+name: Test CI Only
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Hello from GitHub Actions
+      run: echo "🎉 Hello Rishiraj, your CI/CD pipeline is working!"
